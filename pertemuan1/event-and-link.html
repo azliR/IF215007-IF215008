@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="mx-auto" style="width: 400px; margin: 28px;">
+        <h4 style="text-align: center;">Sistem Easy Phishing (SEP)</h4>
+        <br>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input type="text" class="form-control" id="password">
+            </div>
+            <button id="submit" type="button" class="btn btn-primary">Submit</button>
+        </form>
+        <p>Pelajari tentang UIN Bandung <a href="https://uinsgd.ac.id/" target="_blank">disini</a>.</p>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+            </tr>
+        </thead>
+        <tbody id="listAccount">
+        </tbody>
+    </table>
+
+    <script>
+        function showAccount() {
+            const savedAccount = localStorage.getItem("savedAccount");
+            var savedAccountJsonArr = JSON.parse(savedAccount);
+            if (savedAccountJsonArr === null) {
+                savedAccountJsonArr = [];
+            }
+
+            const tableListAccount = document.getElementById("listAccount");
+
+            var newTableListAccount = ``;
+
+            savedAccountJsonArr.forEach(function (savedAccountJson, index) {
+                newTableListAccount += `
+                    <tr>
+                        <th scope="row">${index + 1}</th>
+                        <td>${savedAccountJson.nama}</td>
+                        <td>${savedAccountJson.email}</td>
+                        <td>${savedAccountJson.password}</td>
+                    </tr>`;
+            });
+
+            tableListAccount.innerHTML = newTableListAccount;
+
+            console.log(savedAccountJsonArr);
+        }
+        showAccount();
+
+        var inputNama = document.getElementById("name");
+        var inputEmail = document.getElementById("email");
+        var inputPassword = document.getElementById("password");
+
+        var inputSubmitButton = document.getElementById("submit");
+        inputSubmitButton.onclick = function (e) {
+            const nama = inputNama.value;
+            const email = inputEmail.value;
+            const password = inputPassword.value;
+
+            const message = `Nama kamu ${nama} dengan email ${email} dan password ${password} terkena phising`;
+            const data = {
+                nama,
+                email,
+                password,
+            };
+
+            const savedAccount = localStorage.getItem("savedAccount");
+            const savedAccountJson = JSON.parse(savedAccount);
+
+            if (savedAccount === null) {
+                localStorage.setItem("savedAccount", JSON.stringify([data]));
+            } else {
+                savedAccountJson.push(data);
+                localStorage.setItem("savedAccount", JSON.stringify(savedAccountJson));
+            }
+            showAccount();
+        };
+    </script>
+</body>
+
+</html>
