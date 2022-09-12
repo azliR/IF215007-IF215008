@@ -37,13 +37,13 @@
 | Description  | string?   | Membuat aplikasi berbasis Web untuk proyek akhir |
 | Deadline     | datetime  | 2022-09-11T07:58:11Z                             |
 
-### Folder
+### Link Category
 | Nama Atribut | Tipe Data | Contoh                               |
 | ------------ | --------- | ------------------------------------ |
 | UUID         | string    | f64ed7cf-cb14-4748-ac1f-30b10f6a3ab7 |
 | Name         | string    | Buku Referensi PAW                   |
 
-### File
+### Link
 | Nama Atribut | Tipe Data | Contoh                                 |
 | ------------ | --------- | -------------------------------------- |
 | UUID         | string    | 3a5c810c-5f5b-4f61-af04-a296b02e3877   |
