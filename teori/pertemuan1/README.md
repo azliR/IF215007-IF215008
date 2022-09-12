@@ -23,7 +23,7 @@
 | Name         | string    | Rizal Hadiyansah                     |
 | NIM          | string    | 1207050109                           |
 
-### Class
+### Classroom
 | Nama Atribut | Tipe Data | Contoh                               |
 | ------------ | --------- | ------------------------------------ |
 | UUID         | string    | be2625cd-97a1-4f7f-93b3-b1df7801b5bf |
@@ -38,12 +38,12 @@
 | Deadline     | datetime  | 2022-09-11T07:58:11Z                             |
 
 ### Folder
- | Nama Atribut | Tipe Data | Contoh                               |
- | ------------ | --------- | ------------------------------------ |
- | UUID         | string    | f64ed7cf-cb14-4748-ac1f-30b10f6a3ab7 |
- | Name         | string    | Buku Referensi PAW                   |
+| Nama Atribut | Tipe Data | Contoh                               |
+| ------------ | --------- | ------------------------------------ |
+| UUID         | string    | f64ed7cf-cb14-4748-ac1f-30b10f6a3ab7 |
+| Name         | string    | Buku Referensi PAW                   |
 
- ### File
+### File
 | Nama Atribut | Tipe Data | Contoh                                 |
 | ------------ | --------- | -------------------------------------- |
 | UUID         | string    | 3a5c810c-5f5b-4f61-af04-a296b02e3877   |
@@ -59,3 +59,6 @@
 | End Date     | datetime? | 2022-09-12T10:20:00Z                 |
 
 ## UX Wireframe
+![OutClass Wireframe 1](wireframe-1.jpeg)
+![OutClass Wireframe 2](wireframe-2.jpeg)
+![OutClass Wireframe 3](wireframe-3.jpeg)
