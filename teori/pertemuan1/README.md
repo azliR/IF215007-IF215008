@@ -39,7 +39,7 @@
 | Description  | string?   | Membuat aplikasi berbasis Web untuk proyek akhir |
 | Deadline     | datetime  | 2022-09-11T07:58:11Z                             |
 
-### Folder
+### Link Category
 | Nama Atribut | Tipe Data | Contoh                               |
 | ------------ | --------- | ------------------------------------ |
 | UUID         | string    | f64ed7cf-cb14-4748-ac1f-30b10f6a3ab7 |
