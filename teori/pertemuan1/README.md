@@ -28,11 +28,13 @@
 | ------------ | --------- | ------------------------------------ |
 | UUID         | string    | be2625cd-97a1-4f7f-93b3-b1df7801b5bf |
 | Name         | string    | IF E                                 |
+| Created By   | string    | 79b8ec97-ea26-4f9b-93c8-a63f27d09c5a |
 
 ### Assignment
 | Nama Atribut | Tipe Data | Contoh                                           |
 | ------------ | --------- | ------------------------------------------------ |
 | UUID         | string    | 60b252e9-27f8-4e3c-a26e-66886fa6cb76             |
+| Class ID     | string    | be2625cd-97a1-4f7f-93b3-b1df7801b5bf             |
 | Nama         | string    | Tugas Project PAW                                |
 | Description  | string?   | Membuat aplikasi berbasis Web untuk proyek akhir |
 | Deadline     | datetime  | 2022-09-11T07:58:11Z                             |
@@ -41,12 +43,14 @@
 | Nama Atribut | Tipe Data | Contoh                               |
 | ------------ | --------- | ------------------------------------ |
 | UUID         | string    | f64ed7cf-cb14-4748-ac1f-30b10f6a3ab7 |
+| Class ID     | string    | be2625cd-97a1-4f7f-93b3-b1df7801b5bf |
 | Name         | string    | Buku Referensi PAW                   |
 
-### File
+### Link
 | Nama Atribut | Tipe Data | Contoh                                 |
 | ------------ | --------- | -------------------------------------- |
 | UUID         | string    | 3a5c810c-5f5b-4f61-af04-a296b02e3877   |
+| Folder ID    | string    | f64ed7cf-cb14-4748-ac1f-30b10f6a3ab7   |
 | URL          | string    | https://goalkicker.com/JavaScriptBook/ |
 | Description  | string?   | Buku Belajar Javascript PDF            |
 
@@ -54,6 +58,7 @@
 | Nama Atribut | Tipe Data | Contoh                               |
 | ------------ | --------- | ------------------------------------ |
 | UUID         | string    | 034c51a8-d37f-484a-a2f7-3dc1449a45a4 |
+| Class ID     | string    | be2625cd-97a1-4f7f-93b3-b1df7801b5bf |
 | Name         | string    | Absen PAW                            |
 | Date         | datetime  | 2022-09-12T08:40:00Z                 |
 | End Date     | datetime? | 2022-09-12T10:20:00Z                 |
