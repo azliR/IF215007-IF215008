@@ -1,0 +1,6 @@
+[submodule "gofiber_outclass-api"]
+	path = gofiber_outclass-api
+	url = https://github.com/azliR/gofiber_outclass-api.git
+[submodule "vue_outclass"]
+	path = vue_outclass
+	url = https://github.com/azliR/vue_outclass.git
