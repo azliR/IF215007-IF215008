@@ -1,4 +1,6 @@
 # UAS
+## Link Youtube
+https://youtu.be/FzwdQJd_pBs
 ## Capaian Perkuliahan
 Klik simbol panah (▶) untuk membuka konten
 ### CLO-0211
